@@ -46,6 +46,10 @@ $displays: flex, grid, block, inline;
     .gap-#{$i}{
         gap: #{$i}rem;
     }
+
+    .fs-#{$i} {
+        font-size: #{$i}rem;
+      }
     
 }
 
@@ -74,6 +78,7 @@ $justify: (
     "center": center,
     "between": space-between,
     "end": flex-end,
+    "spacearound": space-around,
 
 );
 

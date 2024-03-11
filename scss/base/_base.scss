@@ -23,6 +23,10 @@ body {
     font-size: 1.6rem;
 }
 
+body.open{
+overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: $clr-white;

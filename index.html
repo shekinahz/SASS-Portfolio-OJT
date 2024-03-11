@@ -10,9 +10,9 @@
 <body>
     <header class="header py-2">
         <div class="container">
-            <div class="header__wrapper flex justify-between">
+            <div class="header__wrapper flex justify-between items-center">
                 <a href="#">A</a>
-                <ul class="flex gap-2">
+                <ul class="flex gap-2" id="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Skills</a></li>
@@ -20,7 +20,7 @@
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <i>icon</i>
+                <i class="fas fa-bars" id="toggleMenu"></i>
             </div>
         </div>
     </header>
@@ -174,39 +174,39 @@
               </div>
 
               <div class="services__wrapper">
-                <div class="services__card text-center">
-                    <i class="fa-solid fa-paintbrush" class="text-accent"></i>
+                <div class="services__card mb-4 text-center">
+                    <i class="fa-solid fa-paintbrush fs-2 mb-3 text-accent"></i>
                     <h5>Graphic Design</h5>
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veritatis?</p>
                 </div>
 
-                <div class="services__card text-center">
-                    <i class="fa-solid fa-video" class="text-accent "></i>
+                <div class="services__card mb-4 text-center">
+                    <i class="fa-solid fa-video fs-2 mb-3 text-accent "></i>
                     <h5>Video Editing</h5>
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veritatis?</p>
                 </div>
 
-                <div class="services__card text-center">
-                    <i class="fa-solid fa-bullhorn" class="text-accent"></i>
+                <div class="services__card mb-4 text-center">
+                    <i class="fa-solid fa-bullhorn fs-2 mb-3 text-accent"></i>
                     <h5>Branding</h5>
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veritatis?</p>
                 </div>
 
 
-                <div class="services__card text-center">
-                    <i class="fa-solid fa-computer" class="text-accent"></i>
+                <div class="services__card mb-4 text-center">
+                    <i class="fa-solid fa-computer fs-2 mb-3 text-accent"></i>
                     <h5>Web Design</h5>
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veritatis?</p>
                 </div>
 
-                <div class="services__card text-center">
-                    <i class="fa-solid fa-film" class="text-accent"></i>
+                <div class="services__card mb-4 text-center">
+                    <i class="fa-solid fa-film fs-2 mb-3 text-accent"></i>
                     <h5>Motion Graphic</h5>
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veritatis?</p>
                 </div>
 
                 <div class="services__card text-center">
-                    <i class="fa-solid fa-mobile" class="text-accent"></i>
+                    <i class="fa-solid fa-mobile fs-2 mb-3 text-accent"></i>
                     <h5>3D Modeling</h5>
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veritatis?</p>
                 </div>
@@ -219,27 +219,39 @@
             <div class="block-header text-center mb-8">
                 <h2 class="text-white">Contact Me</h2>
               </div>
-              <div class="contactme__wrapper">
-                <div class="contactme__card text-center">
-                    <i class="fa-solid fa-phone" class="text-accent"></i>
-                    <h5>Call Us</h5>
+              <div class="contactme__wrapper flex justify-spacearound">
+                <div class="contactme__card mb-4 text-center">
+                    <i class="fa-solid fa-phone fs-2 mb-3 text-white"></i>
+                    <h5 class="mb-1 fs-2">Call Us</h5>
                     <p class="text-center">09663727171</p>
                 </div>
 
-                <div class="contactme__card text-center">
-                    <i class="fa-solid fa-envelope" class="text-accent"></i>
-                    <h5>Email</h5>
+                <div class="contactme__card mb-4 text-center">
+                    <i class="fa-solid fa-envelope fs-2 mb-3 text-white"></i>
+                    <h5 class="mb-1 fs-2">Email</h5>
                     <p class="text-center">cocomartin@gmail.com</p>
                 </div>
 
-                <div class="contactme__card text-center">
-                    <i class="fa-solid fa-location-dot" class="text-accent"></i>
-                    <h5>Visit Office</h5>
+                <div class="contactme__card mb-4 text-center">
+                    <i class="fa-solid fa-location-dot fs-2 mb-3 text-white"></i>
+                    <h5 class="mb-1 fs-2">Visit Office</h5>
                     <p class="text-center">Bangladesh</p>
                 </div>
             </div>
             <a href="#"class="p-1 bg-white text-accent">Send Message</a>
         </div>
       </section>
+
+      <script>
+        const toggleMenu = document.querySelector("#toggleMenu");
+        const menu = document.querySelector("#menu");
+        const body= document.querySelector("body");
+
+        toggleMenu.addEventListener('click', ()=> {
+            menu.classList.toggle('open');
+            body.classList.toggle('open');
+        })
+      </script>
+
 </body>
 </html>
