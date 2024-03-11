@@ -1,7 +1,11 @@
-$clr-accent: #f16b4e;
-$clr-primary: #232323;
-$clr-secondary: #1f1f1f;
-$clr-white: #fff;
+:root{
+    --light:#fff;
+    --dark:#000;
+
+}
+
+$clr-light: var(--light);
+$clr-dark: var(--dark);
 
 
 $sm: "42rem";

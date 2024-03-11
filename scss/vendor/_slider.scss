@@ -1,25 +1,13 @@
-@use "../abstract/" as*;
-.tns-outer{
-    position: relative;
+@use"../abstract" as*;
+@use "../base/" as*;
 
-.tns-nav{
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 10;
-    
+.tns-controls{
+    @include flex(space-between, center);
+    margin: 2rem 0;
+
     button{
-        margin: 0 .5rem;
-        width: 10px;
-        height: 10px;
-        border-radius: 100%;
+        background-color: transparent;
         border: none;
+        font-size: 3rem;
     }
-         
-    & button.tns-nav-active{
-        background-color: $clr-accent;
-    }
-
-}
 }

@@ -1,10 +1,8 @@
 @use "../abstract" as*;
 // key value
 $colors: (
-    "primary" : $clr-primary,
-    "secondary" : $clr-secondary,
-    "accent" : $clr-accent,
-    "white": $clr-white,
+    "light" : $clr-light,
+    "dark" : $clr-dark,
   
 );
 
