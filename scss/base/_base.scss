@@ -27,8 +27,8 @@ body {
    
 }
 button{
-    color: $clr-light;
-    background-color: $clr-dark;
+    color: $clr-dark;
+    background-color: $clr-light;
 }
 body.open {
      overflow: hidden;

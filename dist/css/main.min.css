@@ -40,8 +40,8 @@ body {
 }
 
 button {
-  color: var(--light);
-  background-color: var(--dark);
+  color: var(--dark);
+  background-color: var(--light);
 }
 
 body.open {
@@ -551,6 +551,7 @@ p {
   position: relative;
 }
 .footer__form form input {
+  background-color: transparent;
   width: 100%;
   padding: 1rem;
   border: none;
@@ -832,7 +833,7 @@ p {
   width: 100%;
   padding: 1.2rem 1rem;
   border: 1px solid var(--dark);
-  background: var(--dark);
+  background: transparent;
   transition: 0.5s ease;
 }
 .bestseller__card button:hover {
@@ -897,7 +898,7 @@ p {
   width: 100%;
   padding: 1.2rem 1rem;
   border: 1px solid var(--dark);
-  background: var(--dark);
+  background: transparent;
   transition: 0.5s ease;
 }
 @media (min-width: 42rem) {

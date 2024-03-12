@@ -20,7 +20,7 @@
             width: 100%;
             padding: 1.2rem 1rem;
             border: 1px solid $clr-dark;
-            background: $clr-dark;
+            background: transparent;
             transition: .5s ease;
             &:hover{
                 background: $clr-dark;
@@ -72,7 +72,7 @@
             width: 100%;
             padding: 1.2rem 1rem;
             border: 1px solid $clr-dark;
-            background: $clr-dark;
+            background: transparent;
             transition: .5s ease;
             @include mediaQuery{
                 width: 20%;
