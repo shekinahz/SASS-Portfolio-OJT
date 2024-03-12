@@ -1,0 +1,74 @@
+@use "../abstract/"as*;
+@use "../base/"as*;
+@use "../component/"as*;
+@use "../layout/"as*;
+
+.contact__wrapper{
+@include mediaQuery{
+    @include unevenGrid(2fr 1fr, 5rem)
+}
+}
+.input-wrap{
+    position: relative;
+    margin-bottom: 1rem;
+    input,textarea{
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-bottom: 1px solid $clr-dark;
+        outline: none;
+        &:focus, &:valid{
+            border-color: coral;
+            & + label{
+                top: -1rem;
+                left: 0;
+                font-size: 1.2rem;
+                color: coral;
+            }
+        }
+    }
+
+    label{
+        position: absolute;
+        top: 1rem;
+        opacity: 0.5;
+        font-size: 1.4rem;
+        transition: .5s ease;
+    }
+
+    span{
+        color: red;
+        font-size: 1.2rem;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.contact__form{
+    margin-bottom: 5rem;
+    button{
+        min-width: 20rem;
+        padding: 1.2rem 1rem;
+        border: none;
+        text-transform: uppercase;
+        background: $clr-dark;
+        color: $clr-light;
+    }
+}
+
+.contact__info{
+    @include mediaQuery{
+        justify-self: flex-end;
+        align-self: flex-end;
+        transform: translateY(-10rem);
+    }
+    ul{ 
+        margin-bottom: 2rem;
+        li{
+            margin-bottom: 1rem;
+            i{
+                padding-right: 1rem;
+            }
+        }
+    }
+}

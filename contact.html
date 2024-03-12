@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+  <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper flex justify-between items-center mb-5">
+                <a href="#">Studio</a>
+                <ul class="flex gap-2" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="single.html">Blog</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href="book.html">Books</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <i class="fas fa-bars" id="toggleMenu"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="Contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora eveniet dolorum eligendi nemo omnis saepe perferendis molestias obcaecati possimus.</p>
+            <div class="contact__wrapper">
+                <div class="contact__form">
+                    <form action="">
+                    <div class="input-wrap">
+                        <input type="text" required>
+                        <label for="">Name</label>
+                        <span>Required*</span>
+                    </div>
+
+                    <div class="input-wrap">
+                        <input type="text" required>
+                        <label for="">Subject</label>
+                        <span>Required*</span>
+                    </div>
+
+                    <div class="input-wrap">
+                        <input type="email" required>
+                        <label for="">Email</label>
+                        <span>Required*</span>
+                    </div>
+
+                    <div class="input-wrap">
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        <label for="">Message</label>
+                        <span>Required*</span>
+                    </div>
+                    <button>Send Message</button>
+                </form>
+                </div>
+                <div class="contact__info">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i>myblog@somewhere.com</li>
+                        <li><i class="fas fa-phone"></i>0912345678</li>
+                        <li><i class="fas fa-map-marker-alt"></i>New York Tondo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__form">
+          <h3>Send Me News</h3>
+          <form action=""><input type="text"placeholder="Enter Your email">
+            <button>Get Insight</button>
+          </form>
+        </div>
+        <div class="footer__links">
+          <div class="footer__box">
+            <h4>Content</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Podcast</a></li>
+              <li><a href="#">Book</a></li>
+              <li><a href="#">Subscription</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer__box">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Partnership</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer__box">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="#">Studio</a>
+        <ul>
+          <li>&copy; Q Studio By Loverboy</li>
+          <li>All Rights Reserved</li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+  <script>
+  
+  const toggleMenu = document.querySelector("#toggleMenu");
+          const menu = document.querySelector("#menu");
+          const body= document.querySelector("body");
+  
+          toggleMenu.addEventListener('click', ()=> {
+              menu.classList.toggle('open');
+              body.classList.toggle('open');
+          })
+      
+  </script>
+  </body>
+  </html>

@@ -26,7 +26,10 @@ body {
     font-size: 1.6rem;
    
 }
-
+button{
+    color: $clr-light;
+    background-color: $clr-dark;
+}
 body.open {
      overflow: hidden;
      height: 100vh;
@@ -39,16 +42,19 @@ a {
 
 ul {
     list-style: none;
+    color: $clr-dark;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     font-family: "sprat-regular";
     text-wrap: balance;
+    color: $clr-dark;
+    
 }
 
 h1 {
-    font-size: clamp(2.5rem, 6vw , 4rem);
+    font-size: clamp(3.5rem, 6vw , 5.5rem);
     margin-bottom: 2rem;
 }
 
@@ -71,6 +77,7 @@ p {
     font-size: clamp(1.4rem, 6vw , 1.6rem);
     margin-bottom: 1.3rem;
     text-wrap: balance;
+    color: $clr-dark;
 }
 
 .container {

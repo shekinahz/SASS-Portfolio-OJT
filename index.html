@@ -11,14 +11,21 @@
 </head>
 <body>
   <!-- HEADER -->
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <a href="#">Studio</a>
-                <button><i class="fas fa-bars"></i></button>
-            </div>
+  <header class="header">
+    <div class="container">
+        <div class="header__wrapper flex justify-between items-center mb-5">
+            <a href="#">Studio</a>
+            <ul class="flex gap-2" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="single.html">Blog</a></li>
+                <li><a href="#">Podcasts</a></li>
+                <li><a href="book.html">Books</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <i class="fas fa-bars" id="toggleMenu"></i>
         </div>
-    </header>
+    </div>
+</header>
 
   <!-- BANNER -->
     <section class="banner mb-5">
@@ -296,7 +303,7 @@
         <li>&copy; Q Studio By Loverboy</li>
         <li>All Rights Reserved</li>
         <li><a href="#">Privacy</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -304,6 +311,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 <script>
+
+const toggleMenu = document.querySelector("#toggleMenu");
+        const menu = document.querySelector("#menu");
+        const body= document.querySelector("body");
+
+        toggleMenu.addEventListener('click', ()=> {
+            menu.classList.toggle('open');
+            body.classList.toggle('open');
+        })
     var slider = tns({
         container: ".trending__slider",
         items: 1,
